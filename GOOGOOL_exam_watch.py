@@ -10,7 +10,7 @@ import winsound
 class GoogoolExamWatch(ctk.CTk):
     def __init__(self):
         super().__init__()
-        self.title("Googool-ExamWatch v1.3")
+        self.title("Googol Test Cheating Detector")
         self.geometry("1400x1100")
         ctk.set_appearance_mode("dark")
         ctk.set_default_color_theme("blue")
@@ -24,17 +24,18 @@ class GoogoolExamWatch(ctk.CTk):
         self.protocol("WM_DELETE_WINDOW", self.on_close)
 
     def create_ui(self):
-        
+
         self.header = ctk.CTkFrame(self, height=90)
         self.header.pack(fill="x", padx=15, pady=10)
-       
-        ctk.CTkLabel(self.header, text="GOOGOOL EXAMWATCH", 
-                    font=("Arial Black", 28), text_color="#00ff00").pack(side="left", padx=25)
-        
-        
+        ctk.CTkLabel(self.header, text="🛡️", font=("Arial Black", 28)).pack(side="left", padx=10)
+        ctk.CTkLabel(self.header, 
+                    text="Googol Test Cheating Detector", 
+                    font=("Arial Black", 28), 
+                    text_color="#1E90FF"
+                    ).pack(side="top", padx=25, anchor="center")
+
         control_frame = ctk.CTkFrame(self.header, fg_color="transparent")
         control_frame.pack(side="right", padx=15)
-        
         self.log_button = ctk.CTkButton(control_frame, text="📁 View Full Logs",
                                       font=("Arial", 14), command=self.show_logs_popup)
         self.log_button.pack(side="right", padx=10)
