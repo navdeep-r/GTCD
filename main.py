@@ -7,10 +7,11 @@ from threading import Thread, Lock
 from PIL import Image
 import numpy as np
 import winsound
-class GoogoolExamWatch(ctk.CTk):
+
+class GoogolCheatingDetectorApp(ctk.CTk):
     def __init__(self):
         super().__init__()
-        self.title("Googol Test Cheating Detector")
+        self.title("Googol Test Cheating Detector")
         self.geometry("1400x1100")
         ctk.set_appearance_mode("dark")
         ctk.set_default_color_theme("blue")
@@ -24,7 +25,6 @@ class GoogoolExamWatch(ctk.CTk):
         self.protocol("WM_DELETE_WINDOW", self.on_close)
 
     def create_ui(self):
-
         self.header = ctk.CTkFrame(self, height=90)
         self.header.pack(fill="x", padx=15, pady=10)
         ctk.CTkLabel(self.header, text="🛡️", font=("Arial Black", 28)).pack(side="left", padx=10)
@@ -155,7 +155,8 @@ class GoogoolExamWatch(ctk.CTk):
         if self.camera and self.camera.isOpened():
             self.camera.release()
         self.destroy()
-class AIProctor:
+
+class GoogolCheatingDetectorAI:
     def __init__(self, app):
         self.app = app
         self.face_cascade = cv2.CascadeClassifier(
@@ -223,9 +224,9 @@ class AIProctor:
         return frame
 
 if __name__ == "__main__":
-    app = GoogoolExamWatch()
+    app = GoogolCheatingDetectorApp()
     if app.init_camera():
-        proctor = AIProctor(app)
+        proctor = GoogolCheatingDetectorAI(app)
         monitor_thread = Thread(target=proctor.monitor_environment)
         monitor_thread.daemon = True
         monitor_thread.start()
