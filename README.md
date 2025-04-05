@@ -23,7 +23,7 @@ A sophisticated AI-powered cheating detection system for online exams and tests 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/NAVDEEP-09coder/GTCD.git
+   git clone https://github.com/navdeep-r/GTCD.git
    cd GTCD
    ```
 
