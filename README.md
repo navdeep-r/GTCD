@@ -5,6 +5,35 @@
 ![OpenCV](https://img.shields.io/badge/OpenCV-4.5%2B-orange)
 ![CustomTkinter](https://img.shields.io/badge/CustomTkinter-5.2%2B-purple)
 
+Main Motto: **"Integrity in Exams"**
+Uneven access to Quality Education is a global issue. This project aims to ensure that all students have equal opportunities to succeed in their exams by providing a reliable and effective cheating detection system.
+This project is a part of the **GDG on Campus Solution Challenge** and is designed to help educational institutions maintain the integrity of their online examinations.
+
+Youtube Demo Video Link - [https://youtu.be/1e-_Og-a1J8](https://youtu.be/1e-_Og-a1J8) <br>
+MVP Link (Download App) - [https://github.com/navdeep-r/GTCD/releases/download/cheating-detection/GTCD.exe](https://github.com/navdeep-r/GTCD/releases/download/cheating-detection/GTCD.exe) <br>
+Presentation PDF - [./gtcd.pdf](./gtcd.pdf)
+
+## Table of Contents 📚
+- [Project Overview](#project-overview-)
+- [Team Information](#team-information-)
+- [Features](#features-)
+  - [Real-time Monitoring](#real-time-monitoring)
+  - [Advanced Detection](#advanced-detection)
+  - [Reporting & Analytics](#reporting--analytics)
+- [Google Tools Used](#google-tools-used-)
+- [Prerequisites & System Requirements](#prerequisites--system-requirements-)
+  - [Essential Requirements](#essential-requirements)
+  - [Recommended Specifications](#recommended-specifications)
+  - [Software Dependencies](#software-dependencies)
+- [Installation](#installation-)
+- [Usage](#usage-)
+- [Screenshots](#screenshots-)
+- [Configuration](#configuration-)
+- [Limitations](#limitations-)
+- [License](#license-)
+- [Contributing](#contributing-)
+- [Directory Structure](#directory-structure-)
+
 A sophisticated AI-powered cheating detection system for online exams and tests that monitors:
 - Screen activity (window switching)
 - Keyboard shortcuts (potential LLM access attempts)
@@ -184,8 +213,9 @@ GTCD/
 ├── .gitignore
 ├── build.py                   # Used to build the application
 ├── gtcd.ico                   # Icon for the application
+├── gtcd.pdf                   # Presentation PDF
 ├── LICENSE
-├── main_for_build.py          # Application code for build version which asks users to enter the Gemini API key
+├── main_for_build.py          # Application code for the build version which asks users to enter the Gemini API key
 ├── main.py                    # Main application code
 ├── README.md
 ├── requirements.txt           # Python dependencies
