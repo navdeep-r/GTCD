@@ -182,7 +182,10 @@ GTCD/
 |     └── alert.png
 ├── .env                       # Environment variables
 ├── .gitignore
+├── build.py                   # Used to build the application
+├── gtcd.ico                   # Icon for the application
 ├── LICENSE
+├── main_for_build.py          # Application code for build version which asks users to enter the Gemini API key
 ├── main.py                    # Main application code
 ├── README.md
 ├── requirements.txt           # Python dependencies
